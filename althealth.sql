@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 26, 2020 at 10:20 PM
+-- Generation Time: Sep 27, 2020 at 10:02 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.4.0
 
@@ -5089,30 +5089,7 @@ CREATE TABLE IF NOT EXISTS `usersinfo` (
 --
 
 INSERT INTO `usersinfo` (`id`, `name`, `email`, `password`, `phone`, `gender`, `position`, `created`) VALUES
-(16, 'Phenyo Mark Esreé Mokgadi', 'admin@althealth.com', 'YWx0aGVhbHRoMTIz', '072 054 9583', '0', 'Developer', '2020-09-26 19:28:08');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user_details`
---
-
-DROP TABLE IF EXISTS `user_details`;
-CREATE TABLE IF NOT EXISTS `user_details` (
-  `user_id` int(11) NOT NULL,
-  `user_email` varchar(200) NOT NULL,
-  `user_password` varchar(200) NOT NULL,
-  `user_name` varchar(200) NOT NULL,
-  `user_type` enum('master','user') NOT NULL,
-  `user_status` enum('Active','Inactive') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `user_details`
---
-
-INSERT INTO `user_details` (`user_id`, `user_email`, `user_password`, `user_name`, `user_type`, `user_status`) VALUES
-(1, 'john_smith@gmail.com', '$2y$10$0Yo2F.EetL3yhB8l6MNvcOH8AYNS0SuXLOoAQr1qXJa3uPASWV0NC', 'John Smith', 'master', 'Active');
+(16, 'phenyo', 'admin@althealth.com', 'VkZaU1NtVm5QVDA9', '0123456789', '0', 'Developer', '2020-09-26 19:28:08');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

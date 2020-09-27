@@ -34,22 +34,22 @@ include('../Template/sidenav.php');
                             <div class="box-body">
                                 <div class="form-group">
                                 <label for="exampleInputName1">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter Client Name" required>
+                                <input type="text" class="form-control" id="name" placeholder="Enter Client Name" maxlength="20" required>
                                 </div>
                                 <div class="form-group">
                                 <label for="exampleInputName1" >Surname</label>
-                                <input type="text"  id="surname" class="form-control" placeholder="Enter Client Surname" required >
+                                <input type="text"  id="surname" class="form-control" placeholder="Enter Client Surname" maxlength="20" required >
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleInputEmail1" >Email</label>
-                                <input type="email"  id="email" class="form-control" placeholder="Enter Clients Email" required >
+                                <input type="email"  id="email" class="form-control" placeholder="Enter Clients Email" maxlength="40" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, }$" >
                             </div>
 
                             
                             <div class="form-group">
                                 <label>Birthday</label>
-                                <input type="date"  id="birth"  class="form-control" required>
+                                <input type="date"  id="birth"  class="form-control" placeholder="yyyy/mm/dd" required>
                             </div>
 
                             <div class="form-group">
@@ -70,28 +70,28 @@ include('../Template/sidenav.php');
                             <div class="form-group">
                                 <label  for="exampleInputName1" >Address</label>
                                
-                                <textarea  id="address" class="form-control" rows="4"  placeholder="Enter address" required></textarea>
+                                <textarea  id="address" class="form-control" rows="4"  placeholder="Enter address" maxlength="60" required></textarea>
                             </div>
 
 
                             <div class="form-group">
                                 <label  for="exampleInputName1" >Code</label>
-                                <input type="number" id="code" class="form-control" placeholder="Enter postal code" >
+                                <input type="number" id="code" class="form-control" maxlength="5" placeholder="Enter postal code" >
                             </div>
 
 
                             <div class="form-group">
                                 <label  for="exampleInputName1" >Mobile No</label>
-                                <input type="number"  id="cell" class="form-control" placeholder="Enter cellphone no" required pattern="[+-]?([0-9]*[.])?[0-9]+" >
+                                <input type="number"  id="cell" class="form-control" placeholder="Enter cellphone no" maxlength="10" required pattern="[+-]?([0-9]*[.])?[0-9]+" >
                             </div>
 
                             <div class="form-group">
                                 <label  for="exampleInputName1">Tel-Home No</label>
-                                <input type="number" id="home" class="form-control"   placeholder="Enter home telephone no" pattern="[+-]?([0-9]*[.])?[0-9]+" >
+                                <input type="number" id="home" class="form-control"   placeholder="Enter home telephone no" maxlength="10" pattern="[+-]?([0-9]*[.])?[0-9]+" >
                             </div>
                             <div class="form-group">
                                 <label  for="exampleInputName1" >Tel-Work No</label>
-                                <input type="number"  id="work" class="form-control"  placeholder="Enter work telephone no"  pattern="[+-]?([0-9]*[.])?[0-9]+" >
+                                <input type="number"  id="work" class="form-control"  placeholder="Enter work telephone no" maxlength="10"  pattern="[+-]?([0-9]*[.])?[0-9]+" >
                             </div>
 
                             <div class="form-group">
@@ -156,4 +156,5 @@ include('../Template/sidenav.php');
             }
         });
     }
+  
 </script>

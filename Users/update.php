@@ -32,11 +32,11 @@ include('../Template/sidenav.php');
                       <div class="box-body">
                         <div class="form-group">
                           <label for="exampleInputName1">Name</label>
-                          <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+                          <input type="text" class="form-control" id="name" placeholder="Enter Name" maxlength="30" required>
                         </div>
                         <div class="form-group">
                           <label for="exampleInputEmail1">Email address</label>
-                          <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" maxlength="40" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required >
                         </div>
                         <div class="form-group">
                           <label for="exampleInputPassword1">Password</label>
@@ -44,7 +44,7 @@ include('../Template/sidenav.php');
                         </div>
                         <div class="form-group">
                           <label for="exampleInputName1">Phone</label>
-                          <input type="text" class="form-control" id="phone" placeholder="Enter Phone" required>
+                          <input type="text" class="form-control" id="phone" placeholder="Enter Phone" maxlength="13" pattern="[+-]?([0-9]*[.])?[0-9]+" required >
                         </div>
                         <div class="form-group">
                             <label for="exampleInputName1">Gender</label>
