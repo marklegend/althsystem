@@ -111,7 +111,7 @@ include('../Template/sidenav.php');
             success: function (result) {
                 if (result['status'] == true) {
                     alert("Successfully Removed supplement!");
-                    window.location.href = '/althealth/supplement';
+                    window.location.href = '/althealth/supplements';
                 }
                 else {
                     alert(result['message']);

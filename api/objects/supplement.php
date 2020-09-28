@@ -34,7 +34,7 @@ class Supplement{
                     " . $this->table_name . " 
                 ORDER BY
                     num DESC
-                    LIMIT 50 ";
+                    LIMIT 100 ";
     
         // prepare query statement
         $stmt = $this->conn->prepare($query);

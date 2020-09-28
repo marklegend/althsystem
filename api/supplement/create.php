@@ -10,16 +10,17 @@ $db = $database->getConnection();
  
 // prepare Supplement object
 $Supplement = new Supplement($db);
- 
+
+ // calculating vat
 $cost = $_POST['cost_excl'];
 $cost_incl =  $cost + ($cost*15/100);
-
 // set Supplement property values
+
 $Supplement->supple = $_POST['supple'];
 $Supplement->supplier = $_POST['supplier'];
 $Supplement->descript = $_POST['descript'];
-$Supplement->cont_incl = $cost_incl;
-$Supplement->cost_excl = $_POST['cost_excl'];
+$Supplement->cost_excl = $cost;
+$Supplement->cost_incl= $cost_incl;
 $Supplement->min_lvls = $_POST['min_lvls'];
 $Supplement->cur_stock_lvls = $_POST['cur_stock_lvls'];
 $Supplement->nappi = $_POST['nappi'];

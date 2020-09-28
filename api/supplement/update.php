@@ -10,9 +10,11 @@ $db = $database->getConnection();
  
 // prepare Supplement object
 $Supplement = new Supplement($db);
+
+//cal vat
   
 $cost = $_POST['cost_excl'];
-$cost_incl =  $cost + ($cost*14/100);
+$cost_incl =  $cost + ($cost*15/100);
 // set Supplement property values
 $Supplement->id = $_POST['id'];
 $Supplement->supplier = $_POST['supplier'];

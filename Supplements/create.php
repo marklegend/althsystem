@@ -119,7 +119,7 @@ include('../Template/sidenav.php');
             success: function (result) {
                 if (result['status'] == true) {
                     alert("Successfully Added New Supplement!");
-                    window.location.href = '/althealth/Supplements';
+                    window.location.href = '/althealth/supplements';
                 }
                 else {
                     alert(result['message']);
