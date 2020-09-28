@@ -1,5 +1,4 @@
 <?php
-include('function.php');
 include('../Template/header.php');
 include('../Template/sidenav.php');
 ?>
@@ -17,7 +16,7 @@ include('../Template/sidenav.php');
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> AltHealth</a></li>
-        <li class="active">Dashboard</li>
+        <li class="active">Email</li>
       </ol>
     </section>
     
